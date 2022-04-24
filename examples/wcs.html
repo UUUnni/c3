@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>WCS Color Saliency Map</title>
+    <script type="text/javascript" src="../lib/d3/d3.js"></script>
+    <script type="text/javascript" src="../lib/d3/d3.color.js"></script>
+    <script type="text/javascript" src="../c3.js"></script>
+    <style type="text/css">
+      * { font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
+      body { background: #fff; }
+      div.color { display: inline-block; padding-bottom: 10px; }
+      #wcs { left: 10px; }
+    </style>
+  </head>
+  <body>
+    <div>
+      <select id="langSelector">
+        <option value="1">lang#1</option>
+        <option value="3">lang#3</option>
+        <option value="7">lang#7</option>
+      </select>
+      <button id="resetButton">Reset</button>
+      <button id="langButton">Load</button>
+    </div>
+      
+    <div>
+      <div id="wcs"><h3>Color Saliency from WCS Color Terms</h3></div>
+    </div>
+
+    <div>
+        <div id="wcsSaliency"><h3>Saliency</h3></div>
+    </div>
+
+    <script type="text/javascript" src="wcs.js"></script>
+  </body>
+</html>
